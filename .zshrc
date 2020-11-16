@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -73,6 +73,7 @@ plugins=(
     git
     gitignore
     man
+    nvm
     colored-man-pages
     colorize
     zsh-syntax-highlighting
@@ -85,8 +86,11 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-EDITOR="vim"
+if [[ -n $SSH_CONNECTION ]]; then
+    export EDITOR="vim"
+else
+    export EDITOR="code"
+fi
 
 # Aliases
 alias zshconfig="vim ~/.zshrc"
@@ -94,3 +98,18 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # Dotfiles
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+# Todo
+alias todo="vim $HOME/Documents/Todolist.md"
+
+# Pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Pipx
+eval "$(register-python-argcomplete pipx)"
+
+# Nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
