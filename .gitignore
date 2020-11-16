@@ -1,0 +1,13 @@
+.vscode-server/
+pipx/
+.dotfiles/
+.zsh_history
+.zshrc.pre-oh-my-zsh
+.pyenv/
+.nvm/
+id_ed25519*
+.oh-my-zsh/
+.viminfo
+.wget-hsts
+.cache/
+.bash*
