@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH:$HOME/Android/Sdk/emulator
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -70,11 +70,13 @@ plugins=(
     gitignore
     man
     nvm
+    npm
     colored-man-pages
     colorize
     zsh-syntax-highlighting
     history
     history-substring-search
+    docker-machine
     sudo
     zsh-navigation-tools
 )

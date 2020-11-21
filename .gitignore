@@ -11,3 +11,16 @@ id_ed25519*
 .wget-hsts
 .cache/
 .bash*
+Android/
+.npm/
+Projects/
+.local/
+.ssh/
+.python_history
+.gradle/
+.java/
+Documents/
+.lesshst
+ISOs/
+.docker/
+.android/
