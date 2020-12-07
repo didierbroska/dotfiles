@@ -30,3 +30,6 @@ Register-ArgumentCompleter -Native -CommandName dotnet -ScriptBlock {
 
 ## Aliases bash compatible
 Set-Alias touch New-Item
+
+## integration vcpkg
+Import-Module 'C:\Users\xavie\.vcpkg\scripts\posh-vcpkg'
