@@ -1,3 +1,5 @@
+[core]
+	editor = \"C:\\Users\\xavie\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" --wait
 [user]
 	name = Didier Bröska
 	email = didier.broska@gmail.com
