@@ -1,7 +1,5 @@
 .docker/
 .pyenv/
-.vscode/
-AppData/
 .local/
 Downloads/
 Searches/
