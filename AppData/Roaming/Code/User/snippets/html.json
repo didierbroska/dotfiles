@@ -1,0 +1,52 @@
+{
+	"Live JS": {
+		"prefix": "live.js",
+		"body": [
+			"<!-- TODO: for dev, delete them -->",
+			"<script src=\"http://livejs.com/live.js\"></script>"
+				],
+		"description": "Add live.js for auto update page when dev"
+	},
+
+	
+	// Timeline snippet bundled with CSS snippet
+	// build from https://www.w3schools.com/howto/howto_css_timeline.asp
+	// 
+	"Timeline Example": {
+		"prefix": "timeline",
+		"body": [
+			"<div class=\"${0:timeline}\">",
+			"  <div class=\"${1:container} ${2:left}\">",
+			"    <div class=\"${4:content}\">",
+			"      <h2>${5:2017}</h2>",
+			"      <p>${6:Lorem ipum}</p>",
+			"    </div>",
+			"  </div>",
+			"  <div class=\"${1:container} ${3:right}\">",
+			"    <div class=\"${4:content}\">",
+			"      <h2>${8:2015}</h2>",
+			"      <p>${9:Lorem ipum}</p>",
+			"    </div>",
+			"  </div>",
+			"</div>"
+		],
+		"description": "Build easier a Timeline with an example"
+	},
+	"Timeline container": {
+		"prefix": "timelinecontainer",
+		"body": [
+			"<div class=\"${0:container} ${1:left}\">",
+			"  <div class=\"${2:content}\">",
+			"    <h2>${3:title}</h2>",
+			"    <p>${4:Lorem ipum}</p>",
+			"  </div>",
+			"</div>",
+		],
+		"description": "Adding container in your timeline"
+	},
+	"Jinja 2 - block": {
+		"prefix": "jblock",
+		"body": "{% block $1 %}$2{% endblock %}",
+		"description": "Jinja 2 block"
+	}
+}

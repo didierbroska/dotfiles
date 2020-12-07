@@ -1,0 +1,80 @@
+{
+    // Ifmain as Python
+	"Main entry script": {
+		"prefix": "ifmain",
+		"body": [
+			"if [[ \"${BASH_SOURCE[0]}\" == \"\\${0}\" ]]",
+			"then",
+			"\t${1:main} \"$@\"",
+			"fi"
+		],
+		"description": "Main calling bash entry."
+    },
+
+    // Argument parsers
+    "Parse args spaced separated": {
+        "prefix": "paspacedsep",
+        "body": [
+            "parseargs(){",
+            "    # Verify is have argument",
+            "    [[ $# -lt 1 ]] && echo \"No argument supplied !\"",
+            "    POSITIONAL=()",
+            "    while [[ $# -gt 0 ]]",
+            "    do",
+            "        option=\"\\$1\"",
+            "",
+            "        case  \\$option in",
+            "            -h|--help)",
+            "                usage",
+            "                shift #past argument",
+            "                shift #past value",
+            "                ;;",
+            "            -${1}|--${2})",
+            "                ${3:function}",
+            "                ${4:shift #past argument}",
+            "                ${5:shift #past value}",
+            "                ;;",
+            "            *) #Unknow option",
+            "                POSITIONAL+=(\"\\$1\")",
+            "                shift",
+            "                ;;",
+            "        esac",
+            "    done",
+            "}",
+            "set -- \"${POSITIONAL[@]}\" # restore positional parameters"
+        ],
+        "description": "Arguments parser without getopts."
+    },
+
+    // Comments and helps
+    "Multiline comment": {
+        "prefix": "multi-comment",
+        "body": [
+            "<< '${1:MULTILINE-COMMENT}'",
+            "\t${2:COMMENT HERE}",
+            "${1:MULTILINE-COMMENT}",
+        ],
+        "description": "Multiline comments in bash."
+    },
+    "Comment Help": {
+        "prefix": "comment-help",
+        "body": [
+            "<< '${1:COMMENT-HELP}'",
+            "\t.SYNOPSIS",
+            "\t\tShort description",
+            "\t.DESCRIPTION",
+            "\t\tLong description",
+            "\t.EXAMPLE",
+            "\t\t<example usage>",
+            "\t\tExplanation of what the example does",
+            "\t.INPUTS",
+            "\t\tInputs (if any)",
+            "\t.OUTPUTS",
+            "\t\tOutput (if any)",
+            "\t.NOTES",
+            "\t\tGeneral notes",
+            "${1:COMMENT-HELP}",
+        ],
+        "description": "Multiline comments help as same as PowerShell."
+    },
+}

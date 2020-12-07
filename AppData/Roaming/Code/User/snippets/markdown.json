@@ -1,0 +1,45 @@
+{
+	// Math
+	"Math inline": {
+		"prefix": "inmath",
+		"body": "$`$1`$",
+		"description": "Math in Gitlab"
+	},
+	"Math Latex Sup": {
+		"prefix": "sup",
+		"body": "^{$1}",
+		"description": "Sup number in Latex"
+	},
+	"Math Latex Sub": {
+		"prefix": "sub",
+		"body": "_{$1}",
+		"description": "Sub number in Latex"
+	},
+
+	// Cned Question Exercice
+	"Question ": {
+		"prefix": "question",
+		"body": [
+			"**<u>QUESTION ${1:1}</u>**",
+			"",
+			"> ${2:Enoncé}"
+		],
+		"description": "Question pour les cours CNED."
+	},
+	"Exercice ": {
+		"prefix": "exercice",
+		"body": [
+			"**<u>EXERCICE ${1:1}</u>**",
+			"",
+			"> ${2:Enoncé}"
+		],
+		"description": "Exercice pour les cours CNED."
+	},
+
+	// Table of Content in markdown all in one extensions
+	"Table of Content": {
+		"prefix": "omit",
+		"body": "<!-- omit in toc -->",
+		"description": "Line sub or prefixed with html comment will be exclude in autogen TOC."
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"Encoding UTF-8": {
+		"prefix": "coding",
+		"body": "# coding: utf-8",
+		"description": "Shabang for Python encoding file."
+	},
+	"Main entry": {
+		"prefix": "ifmain",
+		"body": [
+			"if __name__ == \"__main__\":",
+			"\t${1:main()}",
+			""
+		]
+	}
+}
