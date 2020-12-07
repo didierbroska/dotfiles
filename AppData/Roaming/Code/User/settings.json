@@ -1,0 +1,236 @@
+{
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+
+    // General settings
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Popping and Locking",
+    "workbench.activityBar.visible": true,
+    "window.zoomLevel": 0,
+    "explorer.compactFolders": false,
+    "git.enableCommitSigning": false,
+    
+    // Font
+    //// Editor
+    "editor.fontFamily": "Hack Nerd Font, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    
+    // Endline ruler
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#ff4081"
+    },
+    
+    // Minimap
+    "editor.minimap.scale": 2,
+    "editor.minimap.enabled": false,
+    
+
+    //// Terminal
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.fontSize": 13,
+
+
+
+
+
+    // Files associations add
+    "files.associations": {
+        // Templates
+        ////YAML
+        "*.yml.template": "yaml",
+        "*.yaml.template": "yaml",
+        ////Makefile
+        "*.mk.template": "makefile",
+        ////Markdown
+        "*.md.template": "markdown",
+        ////Json
+        "*.json.template": "json",
+        // Schemastore : http://schemastore.org/
+        "*.json.schemastore": "json",
+        // XML
+        "*.wsb": "xml",
+        // toml
+        "*.toml": "ini",
+    },
+
+    // Emmet and snippet
+    "emmet.showSuggestionsAsSnippets": false, // Logo and call not snippet
+    "emmet.excludeLanguages": [],
+    "emmet.includeLanguages": {
+        "markdown": "html"
+    },
+    "emmet.triggerExpansionOnTab": false,
+    "editor.snippetSuggestions": "bottom",
+
+
+    // Languages settings ====================================================
+    //// PowerShell
+    "[powershell]": {
+        "editor.rulers": [
+            79
+        ],
+        "files.trimTrailingWhitespace": true,
+        "files.eol": "auto"
+    },
+    // Add others version of PowerShell
+    "powershell.powerShellAdditionalExePaths": [
+        {
+            "exePath": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "versionName": "Windows PowerShell Version 5.1"
+        },
+        {
+            "exePath": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+            "versionName": "PowerShell Core 7"
+        }
+    ],
+    // Sets the codeformatting options to follow the given indent style in a way that is compatible with PowerShell syntax. For more information about the brace styles please refer to https://github.com/PoshCode/PowerShellPracticeAndStyle/issues/81.
+    "powershell.codeFormatting.preset": "OTBS",
+    // Adds a space between a keyword and its associated scriptblock expression.
+    "powershell.codeFormatting.whitespaceBeforeOpenBrace": true,
+    // Adds a space between a keyword (if, elseif, while, switch, etc) and its associated conditional expression.
+    "powershell.codeFormatting.whitespaceBeforeOpenParen": true,
+    // Adds spaces before and after an operator ('=', '+', '-', etc.).
+    "powershell.codeFormatting.whitespaceAroundOperator": true,
+    // Adds a space after a separator (',' and ';').
+    "powershell.codeFormatting.whitespaceAfterSeparator": true,
+    "powershell.powerShellDefaultVersion": "PowerShell Core 7",
+    
+    
+    //// Python
+    "[python]": {
+        "editor.rulers": [79]
+    },
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "-l",
+        "79"
+    ],
+    "python.venvPath": "~/.cache/pypoetry/virtualenvs",
+
+
+    //// HTML
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.suggest.insertMode": "replace",
+        "editor.tabSize": 2
+    },
+
+
+    //// Javascript & Json
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+        "editor.rulers": [79],
+        "editor.tabSize": 4
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.rulers": [79],
+        "editor.tabSize": 4
+    },
+
+
+    // Markdown
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.quickSuggestions": true,
+        "editor.wrappingIndent": "same",
+        "editor.wordWrapColumn": 79,
+        "editor.rulers": [79],
+    },
+    "markdown-preview-enhanced.mathBlockDelimiters": [
+        [
+            "$$",
+            "$$"
+        ],
+        [
+            "\\[",
+            "\\]"
+        ]
+    ],
+    "markdown-preview-enhanced.mathInlineDelimiters": [
+        [
+            "$",
+            "$"
+        ],
+        [
+            "\\(",
+            "\\)"
+        ]
+    ],
+    // Information about KaTeX : https://katex.org/docs/supported.html
+    "markdown-preview-enhanced.mathRenderingOption": "KaTeX",
+    "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+    "markdown-preview-enhanced.liveUpdate": true,
+    // "mdmath.delimiters": "gitlab",
+
+
+    // Csharp
+    "[csharp]": {
+        "editor.rulers": [79],
+    },
+
+    // GNU/Linux shell script
+    "[shellscript]": {
+        "files.eol": "\n",
+        "editor.rulers": [79],
+    },
+    
+    // C/C++
+    "C_Cpp.updateChannel": "Insiders",
+
+    
+
+    // Extentions ============================================================
+    //// Todo-Tree
+    "todo-tree.tree.showScanModeButton": false,
+    "todo-tree.highlights.enabled": true,
+
+    //// Spelling
+    "cSpell.language": "en,fr-FR,en-GB,en-US,fr",
+    "cSpell.userWords": [
+        "Aujourd'hui",
+        "Gitlab",
+        "Hotfix",
+        "Ldap",
+        "Lorsqu'elle",
+        "Lorsqu'il",
+        "NTFS",
+        "Puisqu'il",
+        "SGBDR",
+        "Virtualbox",
+        "broska",
+        "dotfiles",
+        "favicons",
+        "favicône",
+        "fullname",
+        "icônifier",
+        "lorsqu’elles",
+        "lorsqu’ils",
+        "minterme",
+        "mintermes",
+        "mkdir",
+        "sqlite",
+        "transtypage"
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "remote.SSH.remotePlatform": {
+        "vps713287.ovh.net": "linux",
+        "54.37.159.134": "linux",
+        "192.168.1.19": "linux",
+        "89.3.25.132": "windows"
+    },
+}
