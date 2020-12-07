@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/.local/bin:$PATH:$HOME/Android/Sdk/emulator
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -65,7 +65,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Plugins load
 plugins=(
-    archlinux
+    ubuntu
     git
     gitignore
     man
