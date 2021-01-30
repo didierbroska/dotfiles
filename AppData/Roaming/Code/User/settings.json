@@ -1,10 +1,5 @@
 {
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": [],
 
     // General settings
     "workbench.sideBar.location": "right",
@@ -102,7 +97,11 @@
     
     //// Python
     "[python]": {
-        "editor.rulers": [79]
+        "editor.rulers": [79],
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
+        "editor.formatOnSave": true
     },
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
@@ -117,7 +116,7 @@
 
     //// HTML
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "vscode.html-language-features",
         "editor.suggest.insertMode": "replace",
         "editor.tabSize": 2
     },
