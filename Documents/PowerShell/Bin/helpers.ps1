@@ -48,3 +48,10 @@ function Invoke-CmdScript {
         }
     }
 }
+
+# Editing Profile and reload it
+function Edit-Profile {
+    $profileFolder = $(Split-Path -Path $profile -Parent)
+    code --wait $profileFolder
+    . $profile
+}
