@@ -28,6 +28,8 @@
         "defaults":
         {
             // Put settings here that you want to apply to all profiles.
+            "fontFace": "Hack Nerd Font",
+            "fontSize": 11
         },
         "list":
         [
@@ -61,6 +63,12 @@
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
                 "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{2b2c8582-008b-5769-97bd-4bb0b7cc1b52}",
+                "hidden": false,
+                "name": "Openstack",
                 "source": "Windows.Terminal.Wsl"
             }
         ]

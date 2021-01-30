@@ -8,7 +8,7 @@
 
     // General settings
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Popping and Locking",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.activityBar.visible": true,
     "window.zoomLevel": 0,
     "explorer.compactFolders": false,
@@ -233,4 +233,5 @@
         "192.168.1.19": "linux",
         "89.3.25.132": "windows"
     },
+    "remote.SSH.remoteServerListenOnSocket": true,
 }
