@@ -32,3 +32,7 @@ Recent/
 SendTo/
 Start\ Menu/
 Templates/
+
+# Unreal Engine
+AppData/Local/UnrealEngine/*/Saved/Config/Windows/EditorLayout.ini
+AppData/Local/UnrealEngine/*/Saved/Config/Windows/EditorSettings.ini
