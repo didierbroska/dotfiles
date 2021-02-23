@@ -44,6 +44,7 @@
         "*.md.template": "markdown",
         ////Json
         "*.json.template": "json",
+        "*.jssur": "json",
         // Schemastore : http://schemastore.org/
         "*.json.schemastore": "json",
         // XML
@@ -124,7 +125,7 @@
 
     //// Javascript & Json
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.defaultFormatter": "vscode.json-language-features",
         "editor.quickSuggestions": {
             "strings": true
         },
@@ -145,7 +146,10 @@
         "editor.quickSuggestions": true,
         "editor.wrappingIndent": "same",
         "editor.wordWrapColumn": 79,
-        "editor.rulers": [79],
+        "editor.rulers": [
+            79
+        ],
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
     },
     "markdown-preview-enhanced.mathBlockDelimiters": [
         [
