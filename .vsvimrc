@@ -1,0 +1,31 @@
+" __     _____ __  __ ____   ____ 
+" \ \   / /_ _|  \/  |  _ \ / ___|
+"  \ \ / / | || |\/| | |_) | |    
+"  _\ V /  | || |  | |  _ <| |___ 
+" (_)\_/  |___|_|  |_|_| \_\\____|
+"                                
+"
+"   Author: Didier Bröska <didier.broska@gmail.com>
+"   Last change:  18 Janvier 2021
+"
+" Special vimrc for VsVim in VisualStudio
+
+
+" Rebinding key for azerty keyboard
+"" unmaping h
+map h <Nop>
+"" hjkl change to jklm
+noremap j h
+noremap k j
+noremap l k
+noremap m l
+
+" Comment Line
+vmap gc :vsc Edit.ToggleLineComment<CR>
+
+" Paning
+nmap <C-W>h <Nop>
+nnoremap <C-w>j <C-w>h
+nnoremap <C-w>k <C-w>j
+nnoremap <C-w>l <C-w>k
+nnoremap <C-w>m <C-w>l
